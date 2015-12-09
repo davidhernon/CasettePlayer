@@ -1,0 +1,30 @@
+div.main-content(ng-controller='casetteCtrl')
+	.header
+	.content
+			object.vector(id="casette", type="image/svg+xml", data="casette.svg")
+			.redbar
+	.content
+		.img-container
+			object.tape(id="tape", type="image/svg+xml", data="tape.svg")
+		text.search {{selected_audio}}
+	.button-container
+		.dropdown
+			button#menu1.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown') Tutorials
+				span.caret
+			ul.dropdown-menu.content2(role='menu', aria-labelledby='menu1')
+				li.content2(role='presentation')
+					a(role='menuitem', tabindex='-1', href='#' ng-click="setAudio(0)") Tape Loop One
+				li.content2(role='presentation')
+					a(role='menuitem', tabindex='-1', href='#', ng-click="setAudio(1)") Tape Loop Two
+				li.content2(role='presentation')
+					a(role='menuitem', tabindex='-1', href='#', ng-click="setAudio(2)") Tape Loop Three
+	.content2
+		button.controls(type="button", ng-click="play()")
+			img(src="play.svg")
+		button.controls(type="button" ng-click="pause()")
+			img(src="pause.svg")
+		button.controls(type="button" ng-click="rew()")
+			img(src="rew.svg")
+		button.controls(type="button" ng-click="ff()")
+			img(src="ff.svg")
+		

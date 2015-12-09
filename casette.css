@@ -1,0 +1,134 @@
+html, body
+{
+	width:100%;
+	margin-left:0px;
+}
+
+.header
+{
+	width:100%;
+	height:20px;
+}
+
+.redbar
+{
+	width:100%;
+	height:30vh;
+	background-color:#F07976;
+	position:absolute;
+	z-index: -1;
+}
+
+.content
+{
+	position:relative;
+	display:block;
+	float:left;
+	width:100%;
+}
+
+.vector
+{	
+	padding-top: 2vh;
+	position:absolute;
+	height:40vh;
+	max-width:50vw;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+}
+
+.tape
+{
+	position:absolute;
+	
+	display:block;
+	z-index: -999;
+	height:50vh;
+	max-width:99vw;
+	max-height:40vh;
+	margin: 0 auto;
+	margin-top:42vh;
+	left: 0;
+	right: 0;
+
+}
+
+.search
+{
+
+	margin: 0 auto;
+	margin-top:49vh;
+	display:block;
+	line-height: 20px;
+	max-width:60vw;
+	width:350px;
+	height:20px;
+	background: transparent;
+    border: none;
+    color:#96ACAF;
+    border: 0px solid;
+    font-size:14px;
+    z-index:10;
+    left: 0;
+	right: 0;
+	/*padding-left:10px;*/
+}
+
+.image-container
+{
+	z-index:8;
+	width:100%;
+}
+
+.main-content
+{
+	display:block;
+	clear:both;
+}
+
+.button-container
+{	
+	/*position:absolute;*/
+	margin:0 auto;
+	margin-top:90vh;
+	left:0;
+	right:0;
+	text-align:center;
+}
+
+.content2
+{
+	margin:0 auto;
+	margin-top:20px;
+	margin-bottom:20px;
+	left:0;
+	right:0;
+	text-align:center;
+}
+
+.button
+{
+	margin-right: 10px;
+	display:inline-block;
+}
+
+.controls
+{
+	background-color: transparent;
+	background-repeat: no-repeat;
+	border:none;
+	overflow:hidden;
+	outline:none;
+	border-radius:20px;
+}
+
+.controls:hover
+{
+	background-color: #FFDED8;
+}
+
+.controls:active
+{
+	background-color: #F27873;
+}
